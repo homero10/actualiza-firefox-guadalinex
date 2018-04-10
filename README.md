@@ -1,5 +1,7 @@
-# actualiza-firefox-guadalinex
+# Descripción
 Actualiza Firefox sin necesidad de ser root en los equipos clientes con Guadalinex Edu de los coles andaluces. Válido para cualquier distro Linux.
+
+# Instrucciones
 
 Para tenerlo en nuestras Guadalinex Edu es muy sencillo. Tan solo hay que seguir los siguientes pasos:
 
