@@ -15,7 +15,7 @@ Para tenerlo en nuestras Guadalinex Edu es muy sencillo. Tan solo hay que seguir
 
 6- Para acceder a la carpeta que contiene nuestros archivos descomprimidos teclearemos de nuevo cd actualiza-firefox-guadalinex-master/
 
-7- Es el momento de hacer correr al script. No sin antes darle permisos de ejecución. Esto es relativamente sencillo, con un chmod +x actualiza_firefox_glinexall.sh lo tendremos listo.
+7- Es el momento de hacer correr al script, no sin antes darle permisos de ejecución. Esto es relativamente sencillo, con un chmod +x actualiza_firefox_glinexall.sh lo tendremos listo.
 
 8- ¡Ahora sí! Llegó el momento final. Para ejecutar nuestro script simplemente habrá que insertar en la terminal la siguiente orden: ./actualiza_firefox_glinexall.sh 
 
