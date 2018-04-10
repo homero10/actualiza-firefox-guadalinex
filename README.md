@@ -19,9 +19,9 @@ Para tenerlo en nuestras Guadalinex Edu es muy sencillo. Tan solo hay que seguir
 
 8- ¡Ahora sí! Llegó el momento final. Para ejecutar nuestro script simplemente habrá que insertar en la terminal la siguiente orden: ./actualiza_firefox_glinexall.sh 
 
-9- Antes de hacer nada, el sript nos preguntará si queremos realizar el proceso de descarga del nuevo Firefox. Responderemos con el 1 y posteriormente pulsaremos la tecla Intro.
+9- Antes de hacer nada, el script nos preguntará si queremos realizar el proceso de descarga del nuevo Firefox. Responderemos con el 1 y posteriormente pulsaremos la tecla Intro.
 
-El script hará todo el trabajo sin necesidad de que el usuario tenga que intervenir de alguna manera. Cuando haya acabado nos mostrará un OK rojo en pantalla.
+El archivo hará todo el trabajo sin necesidad de que el usuario tenga que intervenir de alguna manera. Cuando haya acabado nos mostrará un OK rojo en pantalla.
 
 Enhorabuena, hemos descargado una versión de Firefox completamente funcional para poder usar una versión más reciente de dicho navegador en Guadalinex Edu 2013 y Guadalinex Edu Next/Slim. 
 
