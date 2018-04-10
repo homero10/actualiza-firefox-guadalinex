@@ -7,7 +7,7 @@ Para tenerlo en nuestras Guadalinex Edu es muy sencillo. Tan solo hay que seguir
 
 2- Abrimos una terminal. En Guadalinex Edu 2013 esta se encuentra en Aplicaciones > Accesorios > Terminal, y en las nuevas Guadalinex Edu Next y Slim se encuentra en Aplicaciones > Herramientas del sistema > Terminal o Lxterminal respectivamente.
 
-3- Una vez tengamos abierta la terminal nos situaremos sobre el directorio Descargas. Escribiremos cd Descargas/
+3- Una vez tengamos abierta la terminal, nos situaremos sobre el directorio Descargas. Escribiremos cd Descargas/
 
 4- Ya estamos en la carpeta correspondiente. Ahora hay que descomprimir el archivador descargado en el paso 1. Al tratarse de un .zip escribirimos la orden apropiada, que será unzip seguido del nombre de nuestro archividador, por tanto teclearemos unzip actualiza-firefox-guadalinex-master.zip
 
