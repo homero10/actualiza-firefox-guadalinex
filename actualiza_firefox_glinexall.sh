@@ -67,5 +67,9 @@ rm $DIRECTORIO
 
 echo -e "${ROJO}OK${NORMAL}"
 
+#Añadimos notificación
+
+notify-send 'Firefox se ha actualizado satisfactoriamente' 'Puede acceder a la nueva instalación desde Aplicaciones > Internet o desde el acceso directo creado en el escritorio del sistema' -i firefox-nightly
+
 exit 0
 
