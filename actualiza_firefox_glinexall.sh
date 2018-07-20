@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##Script para actualizar Firefox en Guadalinex Edu 2013 / Next-Slim.
+##Script para actualizar Firefox en Ubuntu / Guadalinex Edu 2013 / Next-Slim.
 
 #VARIABLES
 
