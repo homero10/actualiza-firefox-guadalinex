@@ -4,8 +4,10 @@
 
 #VARIABLES
 
+CHEC64=x86_64
 HOME=~/
-DESCARGA=https://download-installer.cdn.mozilla.net/pub/firefox/releases/59.0.2/linux-i686/es-ES/firefox-59.0.2.tar.bz2
+DESCARGA32=https://download-installer.cdn.mozilla.net/pub/firefox/releases/61.0.1/linux-i686/es-ES/firefox-61.0.1.tar.bz2
+DESCARGA64=https://download-installer.cdn.mozilla.net/pub/firefox/releases/61.0.1/linux-x86_64/es-ES/firefox-61.0.1.tar.bz2
 DIRECTORIO=firefox*.tar.bz2
 LANZADOR=https://raw.githubusercontent.com/homero10/actualiza-firefox-guadalinex/master/firefox-noroot.desktop
 NEWLANZADOR=firefox-noroot.desktop
@@ -19,7 +21,7 @@ cd $HOME
 
 #Bajamos la última versión disponible desde la web de Firefox.
 
-echo -e "${ROJO}¡¡¡ATENCIÓN!!! Se va a descargar la última versión de Firefox disponible hasta la fecha [10-4-2018]. ¿Desea continuar?${NORMAL}"
+echo -e "${ROJO}¡¡¡ATENCIÓN!!! Se va a descargar la última versión de Firefox disponible hasta la fecha [20-7-2018]. ¿Desea continuar?${NORMAL}"
 
 select yn in "Sí" "No" ; do
     case $yn in 
@@ -29,11 +31,45 @@ select yn in "Sí" "No" ; do
 
 done
 
-echo -e "${AZUL}Descargando Firefox...${NORMAL}"
+function CompruebaArch()
+{
 
-wget $DESCARGA -q --show-progress
+CHECK=$(uname -m |grep $CHEC64)
+  if [ "$?" == "0" ] ; then
+   echo -e "${AZUL}Este sistema es de 64 bits${NORMAL}"
+   echo -e "${AZUL}Descargando Firefox para arquitecturas de 64 bits${NORMAL}"
+   wget  $DESCARGA64 -q --show-progress
+   else
+   echo -e "${AZUL}Este sistema es de 32 bits"${NORMAL}   
+   echo -e "${AZUL}Descargando Firefox para arquitecturas de 32 bits${NORMAL}"
+   wget  $DESCARGA32 -q --show-progress
+ 
+  fi  
+}
+
+CompruebaArch
+
+#echo -e "${AZUL}Descargando Firefox...${NORMAL}"
+#wget $DESCARGA -q --show-progress
 
 #Paso para descomprimir Firefox
+
+function EnBuscaDePV()
+{
+
+BUSCAPV=$(which pv)
+
+if [ "$?" == "0" ] ; then
+   echo "PV se encuentra instalado" > /dev/null
+   else
+   echo -e ${AZUL}"PV no está instalado. Se procederá a su descarga"${NORMAL}
+   sudo apt install pv
+ 
+fi
+
+}
+
+EnBuscaDePV
 
 echo -e "${AZUL}Firefox se está descomprimiendo en su directorio personal...${NORMAL}"
 
@@ -70,6 +106,8 @@ echo -e "${ROJO}OK${NORMAL}"
 #Añadimos notificación
 
 notify-send 'Firefox se ha actualizado correctamente' 'Puede acceder a la nueva instalación desde Aplicaciones > Internet o desde el acceso directo creado en el escritorio del sistema' -i firefox-nightly
+
+ 
 
 exit 0
 
